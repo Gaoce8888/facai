@@ -18,8 +18,10 @@ curl -o /usr/local/bin/99.sh -fsSL "$REPO_URL"
 chmod +x /usr/local/bin/ubuntu_helper.sh
 
 # 创建快捷方式
-echo -e "#!/bin/bash\nsudo bash /usr/local/bin/99.sh" > /usr/local/bin/ubuntu-helper
-chmod +x /usr/local/bin/ubuntu-helper
+
+# 创建快捷方式
+echo -e "#!/bin/bash\nsudo bash /usr/local/bin/ubuntu_99.sh" > /usr/local/bin/ubuntu-helper
+chmod +x /usr/local/bin/99
 
 echo "✅ Ubuntu Helper 安装完成！"
 echo "现在你可以输入 'ubuntu-helper' 在终端中运行该工具！"
